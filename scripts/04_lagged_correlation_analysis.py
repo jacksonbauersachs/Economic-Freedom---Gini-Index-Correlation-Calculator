@@ -33,7 +33,7 @@ def calculate_correlation_stats(x, y):
     
     return correlation, p_value, ci_lower, ci_upper, se_corr
 
-def lagged_correlation_analysis(csv_filename='economic_freedom_gini_combined.csv', max_lag=10):
+def lagged_correlation_analysis(csv_filename='economic_freedom_gini_combined.csv', max_lag=30):
     """
     Analyze lagged correlations between economic freedom indicators and Gini index.
     Tests lags from 1 to max_lag years to see if economic freedom predicts future inequality.
@@ -52,7 +52,7 @@ def lagged_correlation_analysis(csv_filename='economic_freedom_gini_combined.csv
     ]
     
     print(f"Analyzing lagged correlations for {len(indicators)} indicators...")
-    print(f"Testing lags from 1 to {max_lag} years...")
+    print(f"Testing lags: 1-10 years, then 15, 20, 25, 30 years...")
     
     all_results = []
     
@@ -60,7 +60,10 @@ def lagged_correlation_analysis(csv_filename='economic_freedom_gini_combined.csv
         if indicator in df.columns:
             print(f"\nAnalyzing: {indicator}")
             
-            for lag in range(1, max_lag + 1):
+            # Create lag periods: 1-10, then 15, 20, 25, 30
+            lag_periods = list(range(1, 11)) + [15, 20, 25, 30]
+            
+            for lag in lag_periods:
                 # Create lagged version of the indicator
                 df_lagged = df.copy()
                 df_lagged[f'{indicator}_lag_{lag}'] = df_lagged.groupby('Country')[indicator].shift(lag)
