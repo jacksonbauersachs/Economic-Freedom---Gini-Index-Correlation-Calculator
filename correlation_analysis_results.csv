@@ -1,0 +1,14 @@
+Indicator,Description,Correlation_with_Gini,Sample_Size,Gini_Mean,Gini_Std,Indicator_Mean,Indicator_Std
+Government Spending,Government Spending Score (0-100),0.5264,1747,37.471,8.6417,58.9665,24.8529
+Government Integrity,Government Integrity Score (0-100),-0.3907,1747,37.471,8.6417,48.9005,23.1012
+Trade Freedom,Trade Freedom Score (0-100),-0.3727,1747,37.471,8.6417,76.0551,11.8318
+Property Rights,Property Rights Score (0-100),-0.3511,1747,37.471,8.6417,56.6457,23.2326
+Judicial Effectiveness,Judicial Effectiveness Score (0-100),-0.3457,426,35.7232,7.0184,54.0033,20.4102
+Tax Burden,Tax Burden Score (0-100),0.3414,1747,37.471,8.6417,72.2333,14.3752
+Fiscal Health,Fiscal Health Score (0-100),-0.3331,426,35.7232,7.0184,72.7038,25.4804
+Business Freedom,Business Freedom Score (0-100),-0.3128,1747,37.471,8.6417,69.7288,13.498
+Labor Freedom,Labor Freedom Score (0-100),-0.1858,1272,36.5818,7.8767,61.1345,14.6611
+Overall Score,Overall Economic Freedom Score (0-100),-0.1847,1747,37.471,8.6417,63.8709,9.1878
+Investment Freedom,Investment Freedom Score (0-100),-0.1295,1747,37.471,8.6417,62.8735,18.9263
+Financial Freedom,Financial Freedom Score (0-100),-0.1141,1747,37.471,8.6417,57.5615,17.357
+Monetary Freedom,Monetary Freedom Score (0-100),-0.1057,1747,37.471,8.6417,75.5473,12.9226
